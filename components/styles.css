@@ -16,6 +16,7 @@ body {
 }
 
 .divBox {
+	justify-content: center;
 	text-align: center;
 	margin: auto;
 	width: 80%;
@@ -28,7 +29,7 @@ body {
 	border: 1px solid rgb(83, 83, 83);
 }
 
-h1 {
+h1, .waviy {
 	margin: 30px 0;
 }
 
@@ -54,11 +55,6 @@ h1 {
 
 .edu-head{
 	font-weight: bold;
-}
-
-.alignLeft {
-	margin-left: 50px;
-	text-align: left;
 }
 
 .waviy {
@@ -91,6 +87,45 @@ h1 {
 	justify-content: center;
 }
 
+a {
+	color: black;
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only screen and (max-width: 1000px), only screen and (max-height: 500px) {
+	.divBox {
+		font-size: 15px;
+	}
+}
+
+.alignLeft {
+	text-align: left;
+}
+
+@media only screen and (min-width: 1000px) {
+	.alignLeft {
+		margin-left: 50px;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.waviy span {
+		font-size: 38px !important;
+	}
+}
+
 .card {
-	margin-left: 80px;
+	display: inline-block;
+	text-align: left;
+	width: 100%;
+	max-width: 540px;
+}
+
+#contactDiv {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
